@@ -1,0 +1,1 @@
+ALTER TABLE observer ALTER COLUMN FirstName TEXT;

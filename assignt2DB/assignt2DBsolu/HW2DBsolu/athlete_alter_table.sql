@@ -1,0 +1,2 @@
+ALTER TABLE 
+    "Athlete" ADD COLUMN Gender TEXT NOT NULL

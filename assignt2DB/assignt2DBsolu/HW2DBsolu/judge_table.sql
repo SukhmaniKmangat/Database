@@ -1,0 +1,9 @@
+CREATE TABLE 
+Judge 
+( 
+IDJudge INTEGER NOT NULL, 
+FirstName TEXT NOT NULL, 
+LastName TEXT NOT NULL, 
+CountryCode TEXT NOT NULL, 
+CONSTRAINT PrimaryKey PRIMARY KEY (IDJudge) 
+);

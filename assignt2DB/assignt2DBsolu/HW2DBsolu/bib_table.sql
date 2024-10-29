@@ -1,0 +1,13 @@
+CREATE TABLE 
+Bib 
+( 
+IDRace INTEGER NOT NULL, 
+IDAthlete INTEGER NOT NULL, 
+BibNumber INTEGER NOT NULL, 
+FinishingTime TEXT NOT NULL, 
+FinishingPlace INTEGER NOT NULL, 
+Finished TEXT NOT NULL, 
+CONSTRAINT PrimaryKey PRIMARY KEY (IDRace, BibNumber), 
+CONSTRAINT Bib_fk1 FOREIGN KEY (IDRace) REFERENCES "Race" ("IDRace"), 
+CONSTRAINT Bib_fk2 FOREIGN KEY (IDAthlete) REFERENCES "Athlete" ("IDAthlete") 
+);

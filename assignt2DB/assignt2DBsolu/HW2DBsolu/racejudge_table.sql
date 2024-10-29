@@ -1,0 +1,9 @@
+CREATE TABLE 
+RaceJudge
+( 
+IDRace INTEGER NOT NULL, 
+IDJudge INTEGER NOT NULL, 
+CONSTRAINT PrimaryKey PRIMARY KEY (IDRace, IDJudge), 
+CONSTRAINT RaceJudge_fk1 FOREIGN KEY (IDRace) REFERENCES "Race" ("IDRace"), 
+CONSTRAINT RaceJudge_fk2 FOREIGN KEY (IDJudge) REFERENCES "Judge" ("IDJudge") 
+);

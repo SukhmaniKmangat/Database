@@ -1,0 +1,13 @@
+CREATE TABLE 
+Race 
+( 
+IDRace INTEGER NOT NULL, 
+IDEvent INTEGER NOT NULL, 
+RaceDate TEXT NOT NULL, 
+StartTime TEXT NOT NULL, 
+Distance INTEGER NOT NULL, 
+DistanceUnits TEXT NOT NULL, 
+Gender TEXT NOT NULL, 
+CONSTRAINT PrimaryKey PRIMARY KEY (IDRace, IDEvent), 
+CONSTRAINT Race_fk1 FOREIGN KEY (IDEvent) REFERENCES "Event" ("IDEvent") 
+);
